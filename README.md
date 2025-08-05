@@ -1,1 +1,260 @@
-# Mirox
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirox - Ad Packages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFD700;
+    }
+    .packages {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 2rem;
+    }
+    .card {
+      background-color: #222;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      color: #FFD700;
+      text-align: center;
+    }
+    .details {
+      display: none;
+      background-color: #111;
+      padding: 2rem;
+    }
+    .buy-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #FFD700;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>Mirox - Ad Package Services</header>
+  <div class="packages">
+    <div class="card" onclick="showDetails('bronze')">
+      <h2>Bronze</h2>
+      <p>2 days • 9,000 people/day</p>
+      <p>Total Reach: 18,000</p>
+      <p>4,000 birr</p>
+    </div>
+    <div class="card" onclick="showDetails('gold')">
+      <h2>Gold</h2>
+      <p>4 days • 13,000 people/day</p>
+      <p>Total Reach: 52,000</p>
+      <p>10,000 birr</p>
+    </div>
+    <div class="card" onclick="showDetails('platinum')">
+      <h2>Platinum</h2>
+      <p>3 days • 11,000 people/day</p>
+      <p>Total Reach: 33,000</p>
+      <p>7,000 birr</p>
+    </div>
+  </div>
+
+  <div id="bronze" class="details">
+    <h2>Bronze Package</h2>
+    <p>Ad runs for 2 days.</p>
+    <p>Reach 9,000 people per day. Total reach: 18,000.</p>
+    <p>Price: 4,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="gold" class="details">
+    <h2>Gold Package</h2>
+    <p>Ad runs for 4 days.</p>
+    <p>Reach 13,000 people per day. Total reach: 52,000.</p>
+    <p>Price: 10,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="platinum" class="details">
+    <h2>Platinum Package</h2>
+    <p>Ad runs for 3 days.</p>
+    <p>Reach 11,000 people per day. Total reach: 33,000.</p>
+    <p>Price: 7,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="payment" class="details">
+    <h2>Payment Information</h2>
+    <p>Send payment to:</p>
+    <p><strong>Telebirr Number:</strong> 0912 345 678</p>
+    <p><strong>Bank Account (CBE):</strong> 1000123456789</p>
+    <p>After sending, please contact us with proof.</p>
+  </div>
+
+  <script>
+    function showDetails(id) {
+      document.querySelectorAll('.details').forEach(div => div.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo(0, document.getElementById(id).offsetTop);
+    }
+
+    function showPayment() {
+      document.querySelectorAll('.details').forEach(div => div.style.display = 'none');
+      document.getElementById('payment').style.display = 'block';
+      window.scrollTo(0, document.getElementById('payment').offsetTop);
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirox - Ad Packages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFD700;
+    }
+    .packages {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 2rem;
+    }
+    .card {
+      background-color: #222;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 250px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      color: #FFD700;
+      text-align: center;
+    }
+    .details {
+      display: none;
+      background-color: #111;
+      padding: 2rem;
+    }
+    .buy-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #FFD700;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>Mirox - Ad Package Services</header>
+  <div class="packages">
+    <div class="card" onclick="showDetails('bronze')">
+      <h2>Bronze</h2>
+      <p>2 days • 9,000 people/day</p>
+      <p>Total Reach: 18,000</p>
+      <p>4,000 birr</p>
+    </div>
+    <div class="card" onclick="showDetails('gold')">
+      <h2>Gold</h2>
+      <p>4 days • 13,000 people/day</p>
+      <p>Total Reach: 52,000</p>
+      <p>10,000 birr</p>
+    </div>
+    <div class="card" onclick="showDetails('platinum')">
+      <h2>Platinum</h2>
+      <p>3 days • 11,000 people/day</p>
+      <p>Total Reach: 33,000</p>
+      <p>7,000 birr</p>
+    </div>
+  </div>
+
+  <div id="bronze" class="details">
+    <h2>Bronze Package</h2>
+    <p>Ad runs for 2 days.</p>
+    <p>Reach 9,000 people per day. Total reach: 18,000.</p>
+    <p>Price: 4,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="gold" class="details">
+    <h2>Gold Package</h2>
+    <p>Ad runs for 4 days.</p>
+    <p>Reach 13,000 people per day. Total reach: 52,000.</p>
+    <p>Price: 10,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="platinum" class="details">
+    <h2>Platinum Package</h2>
+    <p>Ad runs for 3 days.</p>
+    <p>Reach 11,000 people per day. Total reach: 33,000.</p>
+    <p>Price: 7,000 birr</p>
+    <button class="buy-button" onclick="showPayment()">Buy Now</button>
+  </div>
+
+  <div id="payment" class="details">
+    <h2>Payment Information</h2>
+    <p>Send payment to:</p>
+    <p><strong>Telebirr Number:</strong> 0912 345 678</p>
+    <p><strong>Bank Account (CBE):</strong> 1000123456789</p>
+    <p>After sending, please contact us with proof.</p>
+  </div>
+
+  <script>
+    function showDetails(id) {
+      document.querySelectorAll('.details').forEach(div => div.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo(0, document.getElementById(id).offsetTop);
+    }
+
+    function showPayment() {
+      document.querySelectorAll('.details').forEach(div => div.style.display = 'none');
+      document.getElementById('payment').style.display = 'block';
+      window.scrollTo(0, document.getElementById('payment').offsetTop);
+    }
+  </script>
+</body>
+</html>
+
