@@ -237,10 +237,7 @@
   <div id="payment" class="details">
     <h2>Payment Information</h2>
     <p>Send payment to:</p>
-    <p><strong>Telebirr Number:</strong> 0912 345 678</p>
-    <p><strong>Bank Account (CBE):</strong> 1000123456789</p>
-    <p>After sending, please contact us with proof.</p>
-  </div>
+    <p><strong>Telebirr Number:</strong> 0941356787</p>
 
   <script>
     function showDetails(id) {
